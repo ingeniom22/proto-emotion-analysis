@@ -63,7 +63,7 @@
                 const audioUrl = URL.createObjectURL(audioBlob);
                 document.getElementById('audioPlayer').src = audioUrl;
 
-                // Enable the post button once recording is stopped
+                // Enable the post button setelah recording selesai
                 document.getElementById('postAudio').disabled = false;
                 document.getElementById('clearRecord').disabled = false;
             };
@@ -92,7 +92,7 @@
             try {
                 // Display "Loading..."
                 const loadingDiv = document.getElementById('loading');
-                loadingDiv.innerHTML = '<h1 class="display-4">Loading...</h1>';
+                loadingDiv.innerHTML = '<h1 class="display-4">Sedang menganalisis...</h1>';
 
                 // Membuat file audio dari chunks
                 const audioBlob = new Blob(recordedChunks, { type: 'audio/wav' });
