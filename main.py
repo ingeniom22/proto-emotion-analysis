@@ -40,7 +40,8 @@ async def upload_audio(file: UploadFile = File(...)):
             messages=[
                 {
                     "role": "system",
-                    "content": """
+                    "content": 
+                    """
                     Anda adalah seorang Psikolog. Tugas anda adalah memberikan analisis persentase emosi dari pesan user.
                     Contoh: Marah 10%, Sedih 75%, Gugup 15%. Anda boleh menggunakan kategori emosi lain yang lebih tepat. 
                     Gunakan Bahasa Indonesia yang baik dan benar.
